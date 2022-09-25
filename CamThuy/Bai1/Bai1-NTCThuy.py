@@ -75,8 +75,6 @@ print('Câu 9: Độ dài chuỗi')
 print(s.str.len())
 
 print('Câu 10: Loại bỏ khoảng trắng')
-print(s)
-print("After Stripping:")
 print(s.str.strip())
 
 
@@ -87,18 +85,18 @@ print('Câu 11: Dân số và diện tích của một số tỉnh / thành ph�
 population = pd.Series({'TP.HCM': 8993, 'Hanoi': 8053, 'Lam Dong': 1297, 'Quang Tri': 623})
 area = pd.Series({'TP.HCM': 2061, 'Hanoi': 3359, 'Lam Dong': 9765, 'Quang Tri': 4746})
 data = pd.DataFrame({'Dân số': population, 'Diện tích': area})
-data
+print(data)
 print('\n\n')
 
 
 print('Câu 12: Bảng dân số Việt Nam')
-data['Dân số']
+print(data['Dân số'])
 print('\n\n')
 
 
 print('Câu 13: Bảng mật độ, dân số, diện tích Việt Nam')
 data['Mật độ'] = data['Dân số'] / data['Diện tích']
-data
+print(data)
 print('\n\n')
 
 
